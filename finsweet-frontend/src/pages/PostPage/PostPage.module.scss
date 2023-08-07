@@ -1,0 +1,95 @@
+@import '../../assets/defaultVariables';
+@import '../../assets/rem';
+
+.post {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	gap: rem(64px);
+
+	.heading {
+		margin-top: rem(128px);
+		width: rem(768px);
+		display: flex;
+		flex-direction: column;
+		gap: rem(24px);
+
+		.author {
+			display: flex;
+			gap: rem(16px);
+
+			img {
+				margin-top: rem(5px);
+				width: rem(45px);
+				height: rem(45px);
+			}
+		}
+
+		.help {
+			display: flex;
+			flex-direction: column;
+			gap: rem(32px);
+
+			.postTag {
+				display: flex;
+				gap: rem(8px);
+			}
+		}
+	}
+
+	.postImg {
+		width: rem(1280px);
+	}
+
+	.content {
+		width: rem(843px);
+		display: flex;
+		flex-direction: column;
+		gap: rem(48px);
+
+		.textBox {
+			display: flex;
+			flex-direction: column;
+			gap: rem(16px);
+
+			.text {
+				display: flex;
+				flex-direction: column;
+				gap: rem(24px);
+
+				.list {
+					display: flex;
+					flex-direction: column;
+					gap: rem(2px);
+
+					list-style-type: none;
+
+					li {
+						display: flex;
+						gap: rem(12px);
+					}
+				}
+			}
+		}
+	}
+}
+
+.mediumPosts {
+	padding-top: rem(128px);
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+
+	.help {
+		display: flex;
+		flex-direction: column;
+		gap: rem(64px);
+
+
+		.list {
+			display: flex;
+			justify-content: center;
+			gap: rem(32px);
+		}
+	}
+}

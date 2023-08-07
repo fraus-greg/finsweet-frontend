@@ -1,0 +1,15 @@
+@import './../../../assets/defaultVariables';
+@import './../../../assets/rem';
+
+.section {
+	width: rem(405px);
+	display: flex;
+	flex-direction: column;
+	gap: rem(32px);
+
+	.content {
+		display: flex;
+		flex-direction: column;
+		gap: rem(16px);
+	}
+}

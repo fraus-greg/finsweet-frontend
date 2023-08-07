@@ -1,0 +1,82 @@
+@import "../../../assets/defaultVariables";
+@import "../../../assets/rem";
+
+.footer {
+	padding: rem(59px) rem(80px) rem(56px) rem(80px);
+	display: flex;
+	flex-direction: column;
+	gap: rem(50px);
+	
+	background-color: $color_black;
+	
+	nav {
+		display: flex;
+		justify-content: space-between;
+		
+		img {
+			width: rem(140px);
+		}
+		
+		.links {
+			display: flex;
+			gap: rem(24px);
+		}
+	}
+	
+	.widget {
+		width: 100%;
+		padding: rem(80px) rem(64px);
+		display: flex;
+		justify-content: space-between;
+		
+		background: rgb(255, 255, 255, 0.05);
+		
+		.text {
+			width: rem(562px);
+		}
+		
+		.form {
+			height: fit-content;
+			display: flex;
+			gap: rem(24px);
+			
+			input {
+				padding-left: rem(25px);
+				width: rem(323px);
+				
+				border: 1px solid #4c4c4c;
+				
+				background: rgb(255, 255, 255, 0);
+			}
+			
+			input::placeholder {
+				font-family: "Inter", serif;
+				font-weight: 400;
+				font-size: rem(16px);
+				line-height: rem(28px);
+				
+				color: rgb(255, 255, 255, 0.7);
+			}
+		}
+	}
+	
+	.contact {
+		display: flex;
+		justify-content: space-between;
+		
+		.text {
+			width: rem(288px);
+		}
+		
+		.links {
+			display: flex;
+			gap: rem(24px);
+			
+			a {
+				img {
+					width: rem(18px);
+				}
+			}
+		}
+	}
+}

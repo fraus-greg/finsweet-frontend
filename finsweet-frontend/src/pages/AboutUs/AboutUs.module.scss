@@ -1,0 +1,164 @@
+@import '../../assets/defaultVariables';
+@import '../../assets/rem';
+
+.initial {
+	padding-top: 80px;
+	display: flex;
+	gap: rem(32px);
+	align-items: center;
+	justify-content: center;
+
+	.content {
+		position: relative;
+		top: rem(64px);
+		padding: 0 rem(64px) rem(64px) rem(64px);
+		width: rem(624px);
+		display: flex;
+		flex-direction: column;
+		gap: rem(16px);
+
+		z-index: 1;
+
+		background-color: $color_white;
+	}
+
+	.text {
+		margin-top: rem(38px);
+		width: rem(477px);
+	}
+}
+
+.second {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+
+	.amount {
+		position: relative;
+		width: rem(1280px);
+		height: rem(444px);
+
+		background-image: url('./assets/amount.png');
+		background-size: 100%;
+
+		.absolute {
+			bottom: 0;
+			left: rem(109px);
+			position: absolute;
+
+			.counter {
+				width: rem(630px);
+				height: rem(156px);
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				gap: rem(68px);
+
+				background-color: $color_main;
+			}
+
+			.line {
+				display: flex;
+
+				.line1 {
+					width: rem(311px);
+					height: rem(24px);
+
+					background-color: $color_second;
+				}
+
+				.line2 {
+					width: rem(550px);
+					height: rem(24px);
+
+					background-color: $color_main;
+				}
+			}
+		}
+	}
+
+	.ourMision {
+		width: rem(1280px);
+		padding: rem(128px) 0 rem(64px) rem(108px);
+		display: flex;
+		gap: rem(32px);
+
+		background-color: $color_lavender;
+
+		.content {
+			width: rem(516px);
+			display: flex;
+			flex-direction: column;
+			gap: rem(24px);
+
+			.text {
+				display: flex;
+				flex-direction: column;
+				gap: rem(16px);
+			}
+		}
+	}
+}
+
+.aboutBlock {
+	margin-top: rem(128px);
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: rem(137px);
+
+	.text {
+		width: rem(519px);
+		display: flex;
+		flex-direction: column;
+		gap: rem(16px);
+	}
+
+	img {
+		width: rem(624px);
+	}
+
+	.firstAbsolute {
+		top: rem(114px);
+		width: rem(103px);
+		height: rem(116px);
+		position: absolute;
+
+		border-top-left-radius: rem(43px);
+		background-color: $color_main;
+	}
+
+	.secondAbsolute {
+		top: rem(443px);
+		left: rem(107px);
+		width: rem(74px);
+		height: rem(74px);
+		position: absolute;
+
+		border-radius: 100%;
+		background-color: $color_second;
+	}
+}
+
+.secondAboutBlock {
+	margin-left: rem(80px);
+	justify-content: normal;
+	gap: rem(64px);
+}
+
+.authors {
+	padding-top: rem(128px);
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+	gap: rem(48px);
+
+	.content {
+		display: flex;
+		gap: rem(32px);
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}

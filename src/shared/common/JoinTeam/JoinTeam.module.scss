@@ -1,0 +1,24 @@
+@import "../../../assets/defaultVariables";
+@import "../../../assets/rem";
+
+.section {
+	padding: rem(128px) 0 rem(128px) 0;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	
+	.help {
+		width: rem(414px);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: rem(32px);
+		
+		.text {
+			display: flex;
+			flex-direction: column;
+			gap: rem(16px);
+			text-align: center;
+		}
+	}
+}

@@ -1,0 +1,17 @@
+@import "../../../assets/defaultVariables";
+@import "../../../assets/rem";
+
+
+.button {
+	padding: rem(16px) rem(48px);
+	width: fit-content;
+	height: fit-content;
+	
+	border: none;
+	
+	background-color: $color_main;
+	
+	&:hover {
+		background: $color_mainHover;
+	}
+}
